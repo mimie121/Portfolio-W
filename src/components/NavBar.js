@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon1 from '../assets/img/linkedin.svg';
+import navIcon2 from '../assets/img/email-1.svg';
+import navIcon3 from '../assets/img/whatsapp.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   HashRouter as Router
@@ -30,7 +30,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          {/* ✅ Fixed Homepage Link */}
+          
           <Navbar.Brand as={HashLink} to="#home">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
@@ -47,11 +47,18 @@ export const NavBar = () => {
             </Nav>
             
             <span className="navbar-text">
-              <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
-              </div>
+            <div className="social-icon">
+               <a href="https://www.linkedin.com/in/andrew-dev87" target="_blank" rel="noopener noreferrer">
+                <img src={navIcon1} alt="LinkedIn" />
+               </a>
+              <a href="mailto:eandrewmiracle@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={navIcon2} alt="Email" />
+             </a>
+             <a href="https://wa.me/905488525839" target="_blank" rel="noopener noreferrer">
+             <img src={navIcon3} alt="WhatsApp" />
+           </a>
+           </div>
+
               <HashLink to="#connect">
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>

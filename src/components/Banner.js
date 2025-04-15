@@ -63,7 +63,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h2>Hi!👋 I'm Miracle, <br /> Front-End Web Developer.</h2>
+                  <h2>Hi!👋 I'm Andrew Miracle E. <br /> <h4>Front-End Web Developer.</h4> </h2>
                   <p>I’m passionate about crafting visually appealing and highly interactive web experiences. I specialize in building responsive and user-friendly websites that blend creativity with functionality.</p>
                   <button onClick={scrollToContact}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
